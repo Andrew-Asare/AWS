@@ -55,9 +55,7 @@ Create another instance on AWS
 ## Default mongod.service
 `sudo echo "server {
     listen 80;
-
     server_name _;
-
     location / {
         proxy_pass http://localhost:3000;
         proxy_http_version 1.1;
