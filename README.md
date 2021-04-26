@@ -37,4 +37,5 @@
  "http://ftp.de.debian.org/debian/pool/main/d/dos2unix/dos2unix_6.0.4-1_amd64.deb"sudo dpkg -i dos2unix_6.0.4-1_amd64.deb`
 
 `dos2unix filename`
-- used if the coppied file needs to be converted
+- used if the coppied file needs to be converted 
+- 
