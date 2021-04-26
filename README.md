@@ -71,3 +71,5 @@ Create another instance on AWS
     
 }" | sudo tee /etc/nginx/sites-available/default `
 
+## bashrc
+` sudo echo "export DB_HOST=mongodb://172.31.34.178:27017/posts" >> ~/.bashrc `
