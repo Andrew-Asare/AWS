@@ -66,5 +66,5 @@ Create another instance on AWS
         proxy_set_header Host \$host;
         proxy_cache_bypass \$http_upgrade;
     }
-}" | sudo tee /etc/nginx/sites-available/default``
+}" | sudo tee /etc/nginx/sites-available/default `
 
