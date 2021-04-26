@@ -39,6 +39,9 @@
 `dos2unix filename`
 - used if the coppied file needs to be converted 
 
+Create another instance on AWS 
+- add port range 27017 with the app_instance public ip
+
 ## Install mongod
 `wget -qO - https://www.mongodb.org/static/pgp/server-3.2.asc | sudo apt-key add -`
 `echo "deb http://repo.mongodb.org/apt/ubuntu xenial/mongodb-org/3.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-3.2.list`
