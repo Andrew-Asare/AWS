@@ -73,3 +73,44 @@ Create another instance on AWS
 
 ## bashrc
 ` sudo echo "export DB_HOST=mongodb://172.31.34.178:27017/posts" >> ~/.bashrc `
+
+## What is a VPC
+VPC virtual private cloud to define and control virtual network
+VPC enables you to launch AWS resources into a virtual network that you've. This virtual network closely resembles a traditionl network that you'd operate in your data centre
+It allows us to EC2 instances to communicate with each other, we can also create multiple subnets within out VPC
+it benefits us with scalability of the infrastruture of AWS
+## Internet gateway
+Inetnet is the point which allowed us to connect to Internet
+A gateway that you attach to your VPC to enable communication between resources in your VPC and the internet
+## What is a Subnet
+Network inside the VPC, they make network more sufficient
+A range of IP addressess in your VPC
+A subnet could have multiple ec2 instances
+## Route Table
+Set of rules, called routes
+Route tables are used to determine where external network traffic is directed
+## NACLS
+NACLS are an added layer of defence they work at the network level
+NACLs are stateless, you have to have rules to allow the request to come in and to allow the response to go back out
+## Public NACLs Inbound Rules
+- 100 Allows inbound HTTP 80 traffic from any IPv4 address.
+- 110 Allows inbound SSH 22 traffic from your network over the internet
+- 120 allows inbount return traffic from hosts on the internet that are responding to requests originating in the subnet - TCP 1024-65535
+## NACLs outbound Rules
+- 100 to allow port 80
+- 110 we need the cirdr block and allow 27017 for outbound access to our Mongo DB server in private subnet
+- 120 to allow short lived ports between 1024-65535
+## Private NACLs Inbound Rules
+- Inbound rules
+
+- outbount rules
+
+## What is Security Group
+- Security groups work as a firewall on the instance level
+- They are attached to the VPC and subnet
+- They have inbound and outbound traffic rules defined
+- Security groups are stateful, if you allowed inbount rule that will automatically be allowed outbound
+- What are the Ephemeral ports
+- They are shortly lived ports, they are automatically allocated based on the demand
+- Allows outbound responses to clients on the internet
+- they range from 1024-65535
