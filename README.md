@@ -153,7 +153,7 @@ NACLs are stateless, you have to have rules to allow the request to come in and 
 - `aws s3 sync s3://eng84shahrukhs3 README.md ` to download the data from our S3 bucket
 
 ## AWS CLI reference:
-`aws s3
+` aws s3
 
 aws s3 cp to copy data from your instance to S3 bucket
 
@@ -167,4 +167,4 @@ aws s3 rb remove bucket
 
 aws s3 rm remove file/data
 
-aws s3 sync download data`
+aws s3 sync download data `
