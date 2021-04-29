@@ -110,7 +110,61 @@ NACLs are stateless, you have to have rules to allow the request to come in and 
 - They are attached to the VPC and subnet
 - They have inbound and outbound traffic rules defined
 - Security groups are stateful, if you allowed inbount rule that will automatically be allowed outbound
-- What are the Ephemeral ports
+## What are the Ephemeral ports
 - They are shortly lived ports, they are automatically allocated based on the demand
 - Allows outbound responses to clients on the internet
 - they range from 1024-65535
+
+## What is S3
+- uses cases
+- who is using S3 in the industry
+- setting up s3, dependencies
+- configure AWSCLI
+- how can we get the authentication done to talk with S3
+- AWS access and secret
+- we will apply crud
+- S3: you will have a backup available to apply CRUD in the console of AWS
+## We need running EC2 to ssh into the instance and AWS access and secret
+
+- S3 is a Simple storage service provided by AWS
+
+- It is used to store and retrieve any amount of data, at anytime, from around the world
+
+- We can also host our static website on S3
+
+- Create a bucket from AWSCLIT
+
+- upload data
+
+- download data
+
+- delete data
+
+- permissons of the bucket
+ 
+- In order have AWSCLI we need to install the required dependencies
+
+- Python
+
+- pip
+
+- Configure the AWSCLI with AWS keys to authenticate the access from our machine to S3
+
+- `aws s3 sync s3://eng84shahrukhs3 README.md ` to download the data from our S3 bucket
+
+## AWS CLI reference:
+`aws s3
+
+aws s3 cp to copy data from your instance to S3 bucket
+
+aws s3 mb make bucket
+
+aws s3 mv move
+
+aws s3 ls list files
+
+aws s3 rb remove bucket
+
+aws s3 rm remove file/data
+
+aws s3 sync download data`
